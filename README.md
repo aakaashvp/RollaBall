@@ -84,6 +84,7 @@ public class NewBehaviourScript : MonoBehaviour
     }
 }
 ## Output:
-![image](https://user-images.githubusercontent.com/75235212/190054596-39b892a1-ef8f-4a32-a7bb-57ff72ff8e8a.png)
+![image](https://user-images.githubusercontent.com/75235212/190054835-cdc4c1ae-640e-4ae6-b66b-0c5bc95e5a74.png)
+
 
 ## Result:
