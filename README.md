@@ -43,7 +43,47 @@ Copy the PlayerController and drag to Script folder
 Double click the PlayerController file and type the coding
 
 ## Program:
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
+public class NewBehaviourScript : MonoBehaviour
+{
+    public float xforce = 2.0f, yforce = 20.0f, zforce = 2.0f;
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        float x = 0.0f, y = 0.0f, z = 0.0f;
+        if (Input.GetKey(KeyCode.A))
+        {
+            x = x - xforce;
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            z = z + zforce;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            x = x + xforce;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            z = z - zforce;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            y = yforce;
+        }
+        GetComponent<Rigidbody>().AddForce(x, y, z);
+    }
+}
 ## Output:
+![image](https://user-images.githubusercontent.com/75235212/190054596-39b892a1-ef8f-4a32-a7bb-57ff72ff8e8a.png)
 
 ## Result:
